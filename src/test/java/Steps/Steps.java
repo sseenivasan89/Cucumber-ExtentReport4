@@ -36,6 +36,7 @@ public class Steps {
 		Hooks.driver.findElement(By.name("q")).sendKeys(keyword);
 		Hooks.driver.findElement(By.name("q")).submit();
 		Thread.sleep(1000);
+		System.out.println("Added from git");
 		Assert.assertEquals("My Title", Hooks.driver.getTitle());
 	}
 	
@@ -43,6 +44,7 @@ public class Steps {
 	public void i_search_the_keyword_in_bing_step(String keyword) throws InterruptedException {
 		Hooks.driver.findElement(By.name("q")).sendKeys(keyword);
 		Hooks.driver.findElement(By.name("q")).submit();
+		System.out.println("Added from git");
 		Thread.sleep(1000);
 	}
 	
